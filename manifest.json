@@ -1,18 +1,4 @@
 {
-  "name": "Fun Accurate Color Tester",
-  "short_name": "FACT",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#fff",
-  "theme_color": "#007257",
-  "description": "Simple progressive web app that can be installed on mobile - color picker.",
-  "author": {
-    "name": "Colton Steeve",
-    "website": "https://coltonsteeve.github.io/aboutme/",
-    "github": "https://github.com/coltonsteeve",
-    "source-repo": "https://github.com/coltonsteeve/fact-pwa"
-  },
   "icons": [
     {
       "src": "./images/AppImages/windows10/Square71x71Logo.scale-400.png",
