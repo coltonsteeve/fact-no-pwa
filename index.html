@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <title>FACT</title>
+
+  <!-- Grab some style from https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#007257">
+  <meta name="Description" content="Fun Accurate Color Tester">
+  <link rel=icon href="images/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel=icon href="images/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="images/AppImages/ios/ios-appicon-180-180.png">
+  <link rel=icon href="images/favicon_io/favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script>
+      // If service workers are supported by user browser
+      // AFter all content has loaded, register the service worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./service-worker.js')
+        })
+      }
+    </script>
+
+</head>
+
+<body>
+
+  <main class="container-fluid mt-3 text-center">
+
+      <section class="col">
+        <h1>Fun Accurate Color Tester</h1>
+        <h1>(FACT)</h1>
+      </section>
+
+      <br>
+
+      <section class="col">
+        <h2>Change Color</h2>
+      </section>
+
+      <section class="col">
+
+        <fieldset>
+          <label for="red">Red</label>
+          <input id="red" type="range" min="0" max="255" value="0">
+        </fieldset>
+
+        <fieldset>
+          <label for="green">Green</label>
+          <input id="green" type="range" min="0" max="255" value="114">
+        </fieldset>
+
+        <fieldset>
+          <label for="blue">Blue</label>
+          <input id="blue" type="range" min="0" max="255" value="87">
+        </fieldset>
+
+      </section>
+      <br>
+      <section class="col">
+        <h2>Hex Code</h2>
+      </section>
+      <section class="col">
+        <h4 id="hex"></h4>
+      </section>
+
+      <section class="col">
+        <canvas id="canvas" width="100" height="100" style="border:1px solid #000000;"></canvas>
+      </section>
+
+    </article>
+
+  </main>
+
+  <footer class="container-fluid mb-3 fixed-bottom text-center">
+    <a href="https://coltonsteeve.github.io/fact-pwa/">Demo</a>
+    &#9670;
+    <a href="https://github.com/coltonsteeve/fact-pwa">Source</a>
+    <a style="color: inherit; text-decoration: none;" href="https://stadia.com">&#9670;</a>
+    <a href="https://www.linkedin.com/in/colton-steeve-aa6b9514a/">Colton Steeve</a>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
