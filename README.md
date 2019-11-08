@@ -27,3 +27,4 @@
 ## See Also
 
 - [More App Examples](https://profcase.github.io/web-apps-list/)
+- [Presentation](https://docs.google.com/presentation/d/1vConFmep6NLjPOB1LTRNbYkq6OfHM52qannHcV1gSeA/edit?usp=sharing)
